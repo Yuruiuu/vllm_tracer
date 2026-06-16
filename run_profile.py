@@ -1,5 +1,7 @@
-import sys
+# run_profile.py
 import os
+os.environ["VLLM_USE_FLASHINFER_SAMPLER"] = "0"
+import sys
 import json
 import torch
 import torch.distributed as dist

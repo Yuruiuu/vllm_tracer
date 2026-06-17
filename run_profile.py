@@ -6,9 +6,7 @@ import json
 import torch
 import torch.distributed as dist
 
-# ========== 必须在导入vLLM之前设置环境变量 ==========
-os.environ["VLLM_ENABLE_V1_MULTIPROCESSING"] = "0"  # 强制单进程，Hook才能生效
-# 已移除无效环境变量 VLLM_ATTENTION_BACKEND / VLLM_DISABLE_USAGE_STATS，避免警告
+os.environ["VLLM_ENABLE_V1_MULTIPROCESSING"] = "0"  
 
 sys.path.insert(0, "/root")
 

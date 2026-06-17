@@ -1,5 +1,5 @@
 """
-Layer 2: Runtime Hooks 
+Layer 2: Runtime Hooks — 适配 vLLM 0.23.0 v1 架构
 """
 import time
 from .core import BUS, TraceEvent
